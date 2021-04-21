@@ -9,6 +9,7 @@
 
     <name>stat-doc-pages</name>
     <url>https://github.com/zmzhou-star/stat-doc-pages.git</url>
+    <description>统计一个文件夹下所有word文档页数</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -89,4 +90,31 @@
             </plugin>
         </plugins>
     </build>
+    <developers>
+        <developer>
+            <name>zmzhou-star</name>
+            <email>zmzhou8@qq.com</email>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <repositories>
+        <repository>
+            <id>aliyunmaven</id>
+            <name>阿里云公共仓库</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
+    </repositories>
+    <!--打包上传到github-->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub zmzhou-star Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/zmzhou-star/stat-doc-pages</url>
+        </repository>
+    </distributionManagement>
 </project>
